@@ -1,22 +1,43 @@
-# 📝 Event Sourcing Platform
+# Event Sourcing Platform
 
-Event-driven architecture platform with CQRS.
+An event sourcing platform for building event-driven applications.
 
 ## Features
-- Event store implementation
-- CQRS pattern support
-- Event replay and snapshots
-- Projection management
-- Event versioning
-- Multi-tenant support
-- Performance optimization
+
+- Event store
+- Event replay
+- Snapshot support
+- Projections
+- Event serialization
 
 ## Tech Stack
-- .NET / Java
-- EventStore
-- PostgreSQL
-- Kafka
+
+- **Language**: Node.js
+- **Storage**: In-memory (extensible)
+
+## Project Structure
+
+\`\`\`
+event-sourcing-platform/
+├── src/
+│   ├── eventStore.js    # Event store
+│   ├── projection.js    # Projections
+│   ├── utils/           # Serializers
+│   └── index.js         # API server
+└── package.json
+\`\`\`
+
+## Usage
+
+\`\`\`bash
+npm start
+\`\`\`
+
+## API Endpoints
+
+- \`POST /events\` - Append event
+- \`GET /events/:streamId\` - Get events
 
 ---
 
-**POWERED BY L8AB SYSTEMS** ⚡
+**POWERED BY L8AB SYSTEMS**
